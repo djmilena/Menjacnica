@@ -14,36 +14,48 @@ public class Valuta {
 		return naziv;
 	}
 	public void setNaziv(String naziv) {
+		if(naziv == null)
+			System.err.println("Potrebno je uneti pun naziv valute!");
 		this.naziv = naziv;
 	}
 	public String getSkrNaziv() {
 		return skrNaziv;
 	}
 	public void setSkrNaziv(String skrNaziv) {
+		if(skrNaziv == null)
+			System.err.println("Potrebno je uneti akronim valute!");
 		this.skrNaziv = skrNaziv;
 	}
 	public GregorianCalendar getDatum() {
 		return datum;
 	}
 	public void setDatum(GregorianCalendar datum) {
+		if(datum.equals(null))
+			System.out.println("Potrebno je uneti datum posmatranja date valute.");
 		this.datum = datum;
 	}
 	public double getKupovniKurs() {
 		return kupovniKurs;
 	}
 	public void setKupovniKurs(double kupovniKurs) {
+		if(kupovniKurs < 0)
+			System.err.println("Kurs mora imati pozitivnu vrednost!");
 		this.kupovniKurs = kupovniKurs;
 	}
 	public double getSrednjiKurs() {
 		return srednjiKurs;
 	}
 	public void setSrednjiKurs(double srednjiKurs) {
+		if(srednjiKurs < 0)
+			System.err.println("Kurs mora imati pozitivnu vrednost!");
 		this.srednjiKurs = srednjiKurs;
 	}
 	public double getProdajniKurs() {
 		return prodajniKurs;
 	}
 	public void setProdajniKurs(double prodajniKurs) {
+		if(prodajniKurs < 0)
+			System.err.println("Kurs mora imati pozitivnu vrednost!");
 		this.prodajniKurs = prodajniKurs;
 	}
 	@Override
