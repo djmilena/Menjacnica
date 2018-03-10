@@ -1,6 +1,5 @@
 package interfejs;
 
-
 import valuta.Valuta;
 
 public interface Menjacnica {

@@ -1,5 +1,6 @@
 package klase;
 
+
 import java.util.LinkedList;
 
 import interfejs.Menjacnica;
@@ -12,8 +13,8 @@ public class Menjacnica1 implements Menjacnica {
 	@Override
 	public void dodajKurs(Valuta v) {
 		// TODO Auto-generated method stub
-		listaValuta.add(v);
 
+		listaValuta.add(v);
 	}
 
 	@Override
@@ -21,16 +22,16 @@ public class Menjacnica1 implements Menjacnica {
 		// TODO Auto-generated method stub
 		if(listaValuta.contains(v))
 			listaValuta.remove(v);
-			
+
 	}
 
 	@Override
 	public Valuta nadjiKurs(Valuta v) {
 		// TODO Auto-generated method stub
-		
+
 		if(listaValuta.contains(v))
 			return v;
-		
+
 		return null;
 	}
 
