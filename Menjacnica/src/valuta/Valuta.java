@@ -10,6 +10,7 @@ public class Valuta {
 	private double kupovniKurs;
 	private double srednjiKurs;
 	private double prodajniKurs;
+	
 	public String getNaziv() {
 		return naziv;
 	}
